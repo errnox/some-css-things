@@ -1,0 +1,116 @@
+/*=========================================================================
+ * Blue Button
+ ========================================================================*/
+
+.button-primary {
+  background-color: #1185CE;
+  border-bottom: 3px solid #1163AC;
+  transition: all 60ms ease-out;
+}
+
+.button-primary:hover {
+  background-color: #33A7EF;
+  box-shadow: 0 0 5px #33A7EF;
+  transition: all 120ms ease-out;
+}
+
+.button-primary:active {
+  border-bottom: none;
+  margin-top: 3px;
+  transition: all 60ms ease-out;
+}
+
+
+/*=========================================================================
+ * Green Button
+ ========================================================================*/
+
+.button-success {
+  background-color: #11CE85;
+  border-bottom: 3px solid #11AC63;
+  transition: all 60ms ease-out;
+}
+
+.button-success:hover {
+  background-color: #33EFA7;
+  box-shadow: 0 0 5px #33EFA7;
+  transition: all 120ms ease-out;
+}
+
+.button-success:active {
+  border-bottom: none;
+  margin-top: 3px;
+  transition: all 60ms ease-out;
+}
+
+/*=========================================================================
+ * Default Button
+ ========================================================================*/
+
+.button-default {
+  background-color: #EAEAE9;
+  border-bottom: 3px solid #CACAC8;
+  transition: all 60ms ease-out;
+}
+
+.button-default:hover {
+  background-color: #EAEAE9;
+  box-shadow: 0 0 5px #CACAC8;
+  transition: all 120ms ease-out;
+}
+
+.button-default:active {
+  border-bottom: none;
+  margin-top: 3px;
+  transition: all 60ms ease-out;
+}
+
+
+/*=========================================================================
+ * Warning Button
+ ========================================================================*/
+
+.button-warning {
+  color: #57534A;
+  background-color: #EECC77;
+  border-bottom: 3px solid #CCAA55;
+  transition: all 60ms ease-out;
+}
+
+.button-warning:hover {
+  color: #57534A;
+  background-color: #EECC77;
+  box-shadow: 0 0 5px #EECC77;
+  transition: all 120ms ease-out;
+}
+
+.button-warning:active {
+  border-bottom: none;
+  margin-top: 3px;
+  transition: all 60ms ease-out;
+}
+
+
+/*=========================================================================
+ * Info Button
+ ========================================================================*/
+
+.button-info {
+  color: #57534A;
+  background-color: #99CCDD;
+  border-bottom: 3px solid #77AABB;
+  transition: all 60ms ease-out;
+}
+
+.button-info:hover {
+  color: #57534A;
+  background-color: #99CCDD;
+  box-shadow: 0 0 5px #99CCDD;
+  transition: all 120ms ease-out;
+}
+
+.button-info:active {
+  border-bottom: none;
+  margin-top: 3px;
+  transition: all 60ms ease-out;
+}

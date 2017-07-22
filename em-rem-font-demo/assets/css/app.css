@@ -1,0 +1,9 @@
+html {
+  font-size: 1em;
+}
+
+.body-copy {
+  font-size: 1.2rem;
+  background-color: #DFF5FF;
+  padding: 1.2rem;
+}

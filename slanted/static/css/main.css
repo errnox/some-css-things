@@ -1,0 +1,100 @@
+/*=======================================================================*/
+/* Left panel */
+/*=======================================================================*/
+
+#left-main-panel {
+  background-color: #34FE78;
+  height: 600px;
+  padding: 50px;
+  padding-top: 200px;
+  padding-left: 240px;
+}
+
+#left-main-panel:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: -240px;
+  display: block;
+  /* Switch `border-top' and `border-bottom' to change the slant */
+  border-top: 300px solid #34FE78;
+  border-bottom: 300px solid transparent;
+  border-right: 120px solid transparent;
+  border-left: 120px solid #34FE78;
+  z-index: 99999999;
+}
+
+
+/*=======================================================================*/
+/* Right panel */
+/*=======================================================================*/
+
+#right-main-panel {
+ padding-left: 240px;
+ padding-top: 200px;
+ height: 600px;
+ background-color: #34AF78;
+ box-shadow: inset 50px 0 186px 5px #444444;
+ /* -moz-transform: scale(0.88) rotate(5.5deg); */  /* Interesting effect */
+}
+
+body * {
+ color: #444444;
+}
+
+#right-main-panel > p, #right-main-panel > h2 {
+ color: #FDFDFD;
+ /* -moz-transform: scale(1.2) rotate(-5.5deg); */  /* Interesting effect */
+}
+
+
+/*=======================================================================*/
+/* Diverse */
+/*=======================================================================*/
+
+#right-main-panel > .button {
+  bottom: 20%;
+  right: 30%;
+  display: block;
+  position: absolute;
+
+  background-color: #34FE78;
+
+  box-shadow: none;
+  border: 5px solid #FDFDFD;
+  -moz-transition: all 0.25s;
+}
+
+#right-main-panel > .button:hover {
+  -moz-transform: scale(1.2);
+}
+
+body {
+  background-color: #FDFDFD;
+  height: 100%;
+}
+
+#main-button {
+  -moz-animation: main-animation 2s 1;
+}
+
+@-moz-keyframes main-animation {
+  0% {
+    background-color: #FDFDFD !important;
+    color: red !important;
+    -moz-transform: scale(1.8);
+  }
+  10% { color: none; }
+  100% { margin-top: 0; }
+}
+
+#main-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+#main-header {
+  padding-left: 50px;
+}

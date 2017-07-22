@@ -1,0 +1,65 @@
+/*************************************************************************/
+/* Animated box */
+/*************************************************************************/
+
+#animatable-box, #animatable-box * {
+  width: 200px;
+  height: 200px;
+}
+
+#animatable-box{
+  border: 5px solid #A3A3FF;
+  translate: transform(0px, 0px);
+  transition: ease-out all 300ms;
+}
+
+#animatable-box:hover {
+  -moz-animation: jiggle 600ms;
+}
+
+@-moz-keyframes jiggle {
+  0%   { transform: translate(0px, 0px);}
+  15%  { transform: translate(-40px, -20px); }
+  30%  { transform: translate(-30px,  30px); }
+  45%  { transform: translate( 50px,  50px); }
+  60%  { transform: translate( 70px, -0px); }
+  60%  { transform: translate(-50px,  50px);}
+  100% { transform: translate(-20px, -20px); }
+}
+
+
+/*************************************************************************/
+/* Non-animated box */
+/*************************************************************************/
+
+#non-animatable-box {
+  display: inline-block;
+  position: inline;
+  background-color: #C5C5FF;
+  transition: ease-out all 300ms;
+}
+
+#non-animatable-box:hover {
+  /* transform: translate(20px, 20px);  /\* [1] opposite translation *\/ */
+  /* transition: ease-out all 300ms; */
+
+  -moz-animation: anti-jiggle 600ms;
+}
+
+@-moz-keyframes anti-jiggle {
+  0%   { transform: translate(0px, 0px);}
+  15%  { transform: translate( 40px,  20px); }
+  30%  { transform: translate( 30px, -30px); }
+  45%  { transform: translate(-50px, -50px); }
+  60%  { transform: translate(-70px,  0px); }
+  60%  { transform: translate( 50px, -50px);}
+  100% { transform: translate( 20px,  20px); }
+}
+
+/*************************************************************************/
+/* Diverse (not necessary) */
+/*************************************************************************/
+
+#main-content {
+  padding: 100px;
+}

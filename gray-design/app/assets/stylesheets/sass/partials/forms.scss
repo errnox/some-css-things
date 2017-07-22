@@ -1,0 +1,12 @@
+@import 'base';
+
+input[type="text"] {
+  background-color: $content-white;
+  padding: 5px;
+  border: 1px solid $lighter-grey;
+}
+
+input[type="text"]:focus {
+  border: 1px solid $link-hover-blue;
+  @include box-shadow(0px 0px 5px $link-hover-blue);
+}

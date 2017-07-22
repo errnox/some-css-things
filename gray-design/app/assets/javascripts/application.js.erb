@@ -1,0 +1,79 @@
+// This is a manifest file that'll be compiled into application.js, which will include all the files
+// listed below.
+//
+// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
+// or vendor/assets/javascripts of plugins, if any, can be referenced here using a relative path.
+//
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// compiled file.
+//
+// Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
+// about supported directives.
+//
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require_tree .
+
+angular.module('metricsApp', [])
+  .run(function($rootScope) {
+    // Initialize SocketIO
+    // (Using `$rootScope' for global state makes sense since all
+    // provideers and all controllers potentially have to be able to access
+    // the socket object.)
+    $rootScope.socket = io.connect('http://localhost:3002');
+  })
+  .controller(
+    'metricsListCtrl',
+    ['$rootScope', '$scope', '$http', '$timeout', function(
+      $rootScope, $scope, $http, $timeout) {
+      var self = this;
+      this.metrics = null;
+
+      this.refresh = function() {
+        $http.get('<%= "metrics" %>')
+          .success(function(data, status, headers, config) {
+            self.metrics = data;
+          })
+          .error(function(data, status, headers, config) {
+            // Ignore it.
+          }) ;
+      };
+      this.refresh();
+
+      this.saveMetric = function(metric) {
+        $rootScope.socket.emit(
+          'socket-metric-change', { data: metric });
+      };
+
+      $rootScope.socket.on('socket-metric-change', function(message) {
+        // Update the metrics model with the new metric.
+        angular.forEach(self.metrics, function(metric, i) {
+          if (metric.id == message.id) {
+            var messageKeys = Object.keys(message);
+            // for (var j = 0; j < messageKeys.length; j++) {
+            angular.forEach(messageKeys, function(messageKey, j) {
+              if (metric[messageKey] !=
+                  message[messageKey]) {
+                metric[messageKey] = message[messageKey];
+              }
+            });
+            metric.dirty = false;
+            // Add and remove animation the class through a model property.
+            // This is not as messy as it seems since the property is never
+            // sent or used otherwise. Even if it was sent to the server,
+            // it would just be ignored.
+            metric.updated = true;
+            $timeout(function() {
+              metric.updated = false;
+            }, 400);
+            // Force AngularJS to update the DOM.
+            $scope.$apply();
+          }
+        });
+      });
+
+      this.markAsDirty = function(metric) {
+        metric.dirty = true;
+      };
+    }]);

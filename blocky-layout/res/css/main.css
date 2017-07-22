@@ -1,0 +1,213 @@
+/*************************************************************************/
+/* Foundicon fonts */
+/*************************************************************************/
+
+@font-face {
+  font-family: 'General Foundicons';
+  src: url('../fonts/general_foundicons.eot');
+  src: url('../fonts/general_foundicons.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/general_foundicons.woff') format('woff'),
+  url('../fonts/general_foundicons.ttf') format('truetype'),
+  url('../fonts/general_foundicons.svg#generalFoundicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class*="foundicon-"] {
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: inherit;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+[class*="foundicon-"]:before {
+  font-family: "General Foundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+}
+
+/*************************************************************************/
+/* Main layout */
+/*************************************************************************/
+
+.row.full-width {
+  min-width: 90% !important;
+}
+
+#header {
+  background-color: #FEFEFE;
+  color: #393939;
+}
+
+#image-bar {
+  background-color: lightgreen;
+}
+
+#main-content {
+  background-color: lightblue;
+  background-color: #393939;
+  display: table;
+  height: 100%;
+}
+
+
+/*************************************************************************/
+/* General Styling */
+/*************************************************************************/
+
+body {
+  background: url("../img/background.jpg") top no-repeat;
+  /* background-color: #3CC3FE; */
+  background-color: #FDF999;
+  color: #393939;
+}
+
+#main-box {
+  box-shadow: 0 1px 100px #393939, 0 1px 0 #393939 inset;
+  margin: 5%;
+}
+
+#image-bar {
+  background: url("../img/imageBarBackground.jpg") center no-repeat;
+  height: 30%;
+}
+
+#logo {
+  /* width: 50px; */
+  /* margin-top: 25px; */
+  /* margin-left: 100px; */
+  font-weight: bold;
+  text-align: center;
+  color: #FEFEFE;
+}
+
+#login-panel {
+  float: right;
+  padding-top: 15px;
+}
+
+#login-panel * {
+  color: #393939;
+}
+
+#login-panel i {
+  padding-right: 10px;
+}
+
+/*************************************************************************/
+/* Application areas styling */
+/*************************************************************************/
+
+/*-----------------------------------------------------------------------*/
+
+#logo-area {
+  background-color: #3C3636;
+  color: #EFEFEF;
+  /* display: table-cell; */
+  padding-top: 30px;
+}
+
+#nav-area {
+  background-color: #FEFEFE;
+  color: #393939;
+  display: table-cell;
+  padding-top: 15px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+#talk-area {
+  color: #393939;
+  background-color: rgba(255, 255, 255, .7);
+  display: table-cell;
+  height: 100%;
+  padding-top: 30px;
+}
+
+#image-area {
+  color: #393939;
+  padding-top: 30px;
+}
+
+/*-----------------------------------------------------------------------*/
+
+#menu-area {
+  background-color: #3C3636;
+  color: #EFEFEF;
+  display: table-cell;
+}
+
+#content-area {
+  background-color: #FEFEFE;
+  color: #393939;
+  padding: 30px;
+}
+
+
+/*************************************************************************/
+/* Individual elements */
+/*************************************************************************/
+
+#main-search-form {
+  display: table-row;
+}
+
+#main-search-form input[type=text] {
+  box-shadow: none;
+  border: none;
+  background-color: #FAFAFA;
+  padding-top: 15px; /* XXX */
+  display: table-cell;
+}
+
+#menu-area a {
+  color: #FAFAFA;
+  text-align: center;
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border-top: 1px solid #494949;
+  border-bottom: 1px solid #292929;
+}
+
+#menu-area a:hover {
+  background-color: #494949;
+  transition: ease-out all 300ms;
+}
+
+#menu-area a:active {
+  background-color: #292929;
+}
+
+#main-search-form i {
+  display: table-cell;
+}
+
+/*-----------------------------------------------------------------------*/
+
+#navigation-panel-bottom {
+  text-align: center;
+}
+
+#navigation-panel-bottom a, i {
+  color: #393939;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav-element:hover {
+  background-color: #EFEFEF;
+}
+
+.nav-element {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 10px;
+  transition: all ease-out 350ms;
+}

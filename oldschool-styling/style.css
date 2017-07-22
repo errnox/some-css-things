@@ -1,0 +1,172 @@
+#container
+{
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+h1 {
+    font-family: "Helvetica";
+    font-size: 60;
+}
+
+#header
+{
+    background: #44AAFF;
+    color: #FFFFFF;
+    /* padding: 20px; */
+    height: 5em;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 0;
+    bottom: 0;
+}
+
+#header h1 { margin: 0; }
+
+#navigation
+{
+    float: left;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background: #FFFFFF;
+}
+
+#navigation ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+#navigation ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+#navigation li a
+{
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    color: #777777;
+    text-decoration: none;
+    border-right: 1px solid #fff;
+    font-family: "Helvetica";
+    font-size: 20;
+}
+
+#navigation li a:hover { background: #DDDDDD; }
+
+div#sectionTitle {
+    background-color: #4488EE;
+    color: #FFFFFF;
+    padding: 5px;
+    font-size: 30;
+    font-family: "Helvetica";
+}
+
+#content-container1
+{
+    float: left;
+    width: 100%;
+    background: #fff url(/wp-content/uploads/layout-three-liquid-background1.gif) repeat-y 20% 0;
+}
+
+#content-container2
+{
+    float: left;
+    width: 100%;
+    background: url(/wp-content/uploads/layout-three-liquid-background2.gif) repeat-y 80% 0;
+}
+
+#section-navigation
+{
+    float: left;
+    width: 16%;
+    padding: 5px 0;
+    margin: 0 2%;
+    display: inline;
+}
+
+#section-navigation ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+#section-navigation ul li
+{
+    margin: 0 0 1em;
+    padding: 0;
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family: "Helvetica";
+}
+
+#section-navigation div:link {
+    color: #777777;
+    text-decoration: none;
+}
+
+#section-navigation div a:link {
+    color: #777777;
+    text-decoration: none;
+}
+
+#section-navigation div:hover {
+    color: #44AAFF;
+}
+#content
+{
+    line-height: 1.5;
+    float: left;
+    width: 56%;
+    padding: 10px 0;
+    margin: 0 0 0 2%;
+}
+
+#content h2 { margin: 0; }
+
+#aside
+{
+    float: right;
+    width: 16%;
+    padding: 10px 0;
+    margin: 0 2% 0 0;
+    display: inline;
+    color: #777777;
+}
+
+#aside h3 {
+    margin: 0;
+    font-family: "Helvetica";
+    font-size: 30;
+    background-color: #4488EE;
+    padding: 5;
+    color: #FFFFFF;
+}
+
+#aside p {
+    padding: 0;
+}
+
+#footer
+{
+    visibility: hidden;
+    clear: both;
+    background: #44AAFF;
+    color: #FFFFFF;
+    text-align: right;
+    padding: 10px;
+    height: 1%;
+    font-family: "Helvetica";
+    font-size: 20;
+}

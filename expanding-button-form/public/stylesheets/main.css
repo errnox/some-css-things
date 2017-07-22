@@ -1,0 +1,63 @@
+body {
+  overflow-y: scroll;
+}
+
+.main-button {
+  background-color: #FF3434;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  min-width: 200px;
+  display: inline-block;
+  min-height: 20px;
+}
+
+.main-button:hover {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.main-button .main-button-toggle {
+  text-decoration: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #FFFFFF;
+  width: 100%;
+  display: inline-block;
+  transition: all 120ms ease-out;
+  outline: 0;
+}
+
+.main-button .main-button-toggle:hover {
+  box-shadow: 0 2px 2px #4C4C4C;
+  background-color: #FF6868;
+  text-shadow: 0 3px 2px #FF3434;
+  transition: all 80ms ease-out;
+}
+
+.main-button .main-button-content {
+  height: 0;
+}
+
+.main-button .input-form {
+  display: none;
+  background-color: #FF6868;
+  border-left: '10px solid #FF3434',
+  border-right: '10px solid #FF3434',
+}
+
+.main-button .main-button-content form input {
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.right-aligned-animated {
+  text-align: right;
+  transition: all 260ms ease-out;
+}
+
+.center-aligned-animated {
+  text-align: center;
+  transition: all 260ms ease-out;
+}

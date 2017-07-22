@@ -1,0 +1,24 @@
+.expanding-button {
+  background-color: #6F6FFF;
+  color: #EFF1F1;
+  background-color: none;
+  border: none;
+  outline: 3px solid #6F6FFF;
+  border-radius: 0;
+  transition: all 120ms ease-out;
+}
+
+.expanding-button:hover {
+  color: #6F6FFF;
+  transition: all 120ms ease-out;
+  text-decoration: none;
+  border-radius: 0 100% 0 100%;
+  transition: all 120ms ease-out;
+}
+
+.expanding-button:active, .expanding-button:focus {
+  margin-top: 4px;
+  margin-bottom: -4px;
+
+  outline: 3px solid #6F6FFF;
+}

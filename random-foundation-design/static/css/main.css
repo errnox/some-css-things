@@ -1,0 +1,117 @@
+#main-logo {
+  /* display: auto; */
+  /* background: url("../img/logo.png"); */
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
+
+  height: 30px;
+  width: auto;
+  margin-bottom: 20px;
+  border-bottom: 10px;
+}
+
+#main-banner {
+  display: auto;
+  background: #38AEAE url("../img/bannerBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+#main-banner p, h1 {
+  color: #FEFEFE !important;
+}
+
+#navigation-bar-top {
+  margin-top: 20px;
+}
+
+#navigation-bar-links * {
+  list-style-type: none !important;
+  display: inline !important;
+  margin-right: 20px;
+  color: #38AE38;
+  border-top: 3px solid rgba(255, 255, 255, 0);
+}
+
+#navigation-bar-links *:hover {
+  border-top: 3px solid #38AE38;
+  animation: all 1.5s 1;
+  /* -moz-transform: scale(1.2) rotate(5deg); */
+  -moz-transition: all 0.25s ease-in-out;
+}
+
+#main-button {
+  /* background-color: #454545; */
+  background-color: #38AEAE;
+  border: 5px solid #FEFEFE;
+}
+
+#action-column {
+  font-size: large;
+  margin-top: 5%;
+}
+
+#info-column * {
+  font-style: italic;
+}
+
+#main-button:hover {
+  color: #253525;
+  background-color: #FEFEFE;
+}
+
+#main-text {
+  padding-top: 30px;
+}
+
+#main-footer {
+  background-color: #253525;
+  color: #FEFEFE;
+}
+
+#main-footer-text {
+  padding-top: 10px !important;
+}
+
+#main-footer-text * {
+  color: #FEFEFE !important;
+  padding-top: 10px !important;
+}
+
+#main-footer-text li {
+  display: inline !important;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+#main-footer-logo {
+  height: 30px;
+}
+
+/*=========================================================================
+  Media Queries
+  =========================================================================*/
+
+
+/* smartphone-tish */
+@media only screen and (max-width: 580px) {
+  #navigation-bar-links * {
+    display: block !important;
+  }
+
+  #action-column {
+    margin-top: 0%;
+    margin-left: 25%;
+  }
+}
+
+/* /\* tablet-tish *\/ */
+/* @media only screen and (min-width: 580px) { */
+/*   #navigation-bar-links * { */
+/*   } */
+/* } */
+
+/* /\* desktop-tish *\/ */
+/* @media only screen and (min-width: 920px) { */
+/* } */

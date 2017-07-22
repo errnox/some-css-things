@@ -1,0 +1,32 @@
+/* General appearance */
+
+.col {
+  border: 1px solid #333333;
+  margin-left: -1px;
+  margin-top: -1px;
+  padding: 0;
+}
+
+.u-High {
+  min-height: 100px;
+}
+
+.u-HighBox {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Buttons */
+
+.btn {
+  font-weight: bold;
+}
+
+.btn.btn-default {
+  color: #787878;
+}
+
+.btnWide {
+  padding-left: 40px;
+  padding-right: 40px;
+}

@@ -1,0 +1,66 @@
+.triangle-top-left {
+  width: 0;
+  height: 0;
+  border-top: 80px solid #FF0000;
+  border-left: 80px solid #FF0000;
+  border-bottom: 80px solid transparent;
+  border-right: 80px solid transparent;
+  display: block;
+  position: absolute;
+}
+
+.triangle-top-right {
+  width: 0;
+  height: 0;
+  border-top: 30px solid #00FF00;
+  border-right: 30px solid #00FF00;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid transparent;
+  display: block;
+  position: absolute;
+}
+
+.triangle-bottom-left {
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #0000FF;
+  border-left: 30px solid #0000FF;
+  border-top: 30px solid transparent;
+  border-right: 30px solid transparent;
+  display: block;
+  position: absolute;
+}
+
+.triangle-bottom-right {
+  width: 0;
+  height: 0;
+  border-bottom: 30px solid #FFFF00;
+  border-right: 30px solid #FFFF00;
+  border-top: 30px solid transparent;
+  border-left: 30px solid transparent;
+  display: block;
+  position: absolute;
+}
+
+
+/* Helpers */
+
+.top-right {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.bottom-left {
+  top: 100%;
+  left: 0;
+  margin-top: -60px;
+  position: absolute;
+}
+
+.bottom-right {
+  top: 100%;
+  right: 0;
+  margin-top: -60px;
+  position: absolute;
+}

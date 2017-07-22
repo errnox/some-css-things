@@ -1,0 +1,108 @@
+/*************************************************************************/
+/* Layout */
+/*************************************************************************/
+
+#content {
+  min-width: 100%;
+}
+
+
+/*************************************************************************/
+/* Areas */
+/*************************************************************************/
+
+#left-column-menu {
+  background-color: #292929;
+  position: relative;
+  height: auto;
+  z-index: 9999;
+}
+
+@media only screen and (min-width: 850px) {
+  #left-column-menu {
+    position: fixed;
+    height: 100%;
+  }
+}
+
+#menu-area {
+  padding-top: 20px;
+  background-color: #292929;
+}
+
+#logo-area {
+  background-color: #2980B9;
+  min-height: 100px;
+}
+
+#main-content-area {
+  background-color: lightpink;
+}
+
+
+/*************************************************************************/
+/* Individual elements */
+/*************************************************************************/
+
+#logo-area * {
+  color: #EFEFEF;
+  text-align: center;
+  font-size: 1.2em;
+  display: block;
+  margin-top: 30px;
+  text-shadow: 0 1px 0px #292929;
+}
+
+#logo-area *:hover {
+  color: #FEFEFE;
+}
+
+#main-content {
+  padding: 10%;
+  background-color: #EFEFEF;
+}
+
+#menu-entry {
+/* display: table-row; */
+}
+
+#menu-entry a {
+  color: #AFAFAF;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  padding-left: 20px;
+  transition: background-color ease-out 150ms;
+}
+
+#menu-entry a:hover, #menu-entry a:focus {
+  /* background-color: #393939; */
+  color: #FFFFFF;
+  background: linear-gradient(to bottom, rgb(255, 168, 76) 0%, rgb(255, 123, 13) 100%) repeat scroll 0% 0% transparent;
+  transition: background-color ease-out 150ms;
+}
+
+#menu-entry a:active {
+  background-color: #2980B9;
+  transition: background-color ease-out 1ms;
+}
+
+html {
+  background-color: #EFEFEF;
+}
+
+/* Experimental bling */
+/* XXX: Does not work on medium sizes (paragraph boxes too large) */
+/* #menu-entry a:hover { */
+/*   transform: scale(1.8) translate(-75px, 0); */
+/*   padding-left: 160px; */
+/*   background-color: rgba(100, 100, 100, 0.5); */
+/*   border-radius: 2px; */
+/*   transition: transform ease-out 800ms; */
+/*   transition: padding-left ease-out 1ms; */
+/* } */
+
+#menu-entry p {
+  display: inline;
+  color: #292929;
+}

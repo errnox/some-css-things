@@ -1,0 +1,39 @@
+%div#content.container
+  %div#main-content.container
+
+    %div.row
+
+    %div.col-md-9
+      .content-box
+        %h2 Main
+        %pThis is a test.
+
+        %h2 Horizontal List
+        %ul.horizontal-list
+          %li List item
+          %li List item
+          %li List item
+          %li List item
+
+        %h2 Inline List
+        %ul.inline-list
+          %li List item
+          %li List item
+          %li List item
+          %li List item
+
+        %h2 Tag Cloud
+        %ul.tag-cloud
+          %li.xs red
+          %li.xxs gree
+          %li.xxl blue
+          %li.xl yellow
+          %li.l white
+          %li.l pink
+          %li.s orange
+          %li.xxl brown
+          %li.xl grey
+
+    %div.col-md-3
+      .content-box
+        = render 'info_bar'

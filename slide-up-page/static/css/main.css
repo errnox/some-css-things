@@ -1,0 +1,88 @@
+#sub-header {
+  border-top: 1px solid #D1D1D1;
+  border-bottom: 1px solid #D1D1D1;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  color: #3F3F3F;
+}
+
+#top-line, #bottom-line {
+  height: 10px;
+  width: 100%;
+  background-color: #00FFAA !important;
+}
+
+#bottom-line {
+  height: 1px;
+}
+
+#main-input {
+  margin: 20px;
+  background-color: #00FFAA !important;
+  border: 10px solid #0AE980;
+}
+
+#main-input label {
+  color: #FDFDFD !important;
+}
+
+#submit-button {
+  left: 30%;
+  background-color: #0AE980 !important;
+  color: #FDFDFD !important;
+}
+
+#submit-button:hover {
+  background-color: #09D870 !important;
+  border-radius: 10px;
+}
+
+
+/*=========================================================================
+  Intro animation
+  =======================================================================*/
+
+#content * {
+  -moz-animation: intro-animation 0.5s 1;
+}
+
+@-moz-keyframes intro-animation {
+  0% {
+    opacity: 0.5;
+    margin-top: 5%;
+  }
+  100% {
+    opacity: 1.0;
+  }
+}
+
+
+/*=========================================================================
+  Hover animation
+  =======================================================================*/
+
+/* #content h1:hover { */
+/*   -moz-animation: hover-animation 0.5s 1; */
+/* } */
+
+/* @-moz-keyframes hover-animation { */
+/*   0% { */
+/*     background-color: #00FFAA; */
+/*     -moz-transform: scale(1.2); */
+/*   } */
+
+/*   100% { */
+/*   } */
+/* } */
+
+
+/*=========================================================================
+  Diverse
+  =======================================================================*/
+
+#image-header {
+  background-color: #343434;
+  height: 120px;
+  width: 100%;
+  background: url("../img/background.png") no-repeat;
+}

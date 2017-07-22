@@ -1,0 +1,28 @@
+#main {
+  margin: auto;
+  width: 80%;
+}
+
+.onload #animated-text {
+  margin-left: 100px;
+  opacity: 1;
+  border-left: 100px solid #666666;
+  padding-left: 15px;
+}
+
+#animated-text {
+  color: #333333;
+  font-size: xx-large;
+  width: 320px;
+  opacity: 0;
+  /* transition: opacity 1s ease 0s, margin-top 200ms ease 0s, margin-bottom 200ms ease 0s, margin-left 1s ease 0s; */
+  transition: opacity 1s ease 0s, margin-left 1s ease 0s, border 1s ease 0s, background-color 1s ease 0s, color 2s ease 0s;
+}
+
+#animated-text:hover {
+  background-color: red;
+  border-left: 10px solid #999999;
+  color: #ffffff;
+}
+
+

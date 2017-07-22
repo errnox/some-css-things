@@ -1,0 +1,91 @@
+@import 'base';
+
+
+/**************************************************************************
+ * Responsive main menu
+ *************************************************************************/
+
+@media only screen and (max-width: 640px) {
+  #main-menu ul {
+    display: block;
+  }
+
+  #main-menu ul li {
+    display: list-item;
+    list-style: none;
+    padding: 10px;
+  }
+
+}
+
+@media screen and (max-width: 44em) {
+  #menu-toggle, #menu-label {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    margin: 10px;
+  }
+
+  #menu-label:before {
+    content: "\2261";
+    font-size: 80px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+  }
+
+  #menu-label {
+    margin-top: -30px;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  #main-menu {
+    position: absolute;
+    left: 0;
+    top: -620px;
+    width: 320px;
+  }
+
+  #menu-toggle:checked ~ #main-menu {
+    top: 0;
+    z-index: 9998;
+    background-color: $header-bar-background;
+    @include box-shadow(0 20px 40px darken($main-menu-background, 10%));
+    border-top: 40px solid $header-bar-background;
+    border-bottom: 40px solid $header-bar-background;
+  }
+
+  #menu-toggle:checked ~ #menu-label:before {
+    content: "\274C";
+    font-size: 36pt;
+  }
+
+  #menu-toggle:checked ~ #menu-label {
+    top: 25px;
+    right: 10px;
+    transition: right 350ms ease-out;
+  }
+
+  #main-label:hover {
+    color: red;
+  }
+
+  #logo {
+    max-width: 100px;
+  }
+
+
+  #main-content div, #main-content .container, #main-content {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+}

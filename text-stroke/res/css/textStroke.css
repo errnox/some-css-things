@@ -1,0 +1,35 @@
+body {
+  background-color: #EEEEEE;
+}
+
+#main-content {
+  background-color: #FEFEFE;
+}
+
+#main-content:hover {
+  background-color: #FF0000;
+}
+
+h1 {
+  text-shadow:
+  3px 3px 0 #FF0000,
+  -3px -3px 0 #FF0000,
+  -3px 3px 0 #FF0000,
+  3px -3px 0 #FF0000;
+  font-size: 5em;
+  color: #FEFEFE;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+p {
+  text-shadow:
+  1px 1px 0 #8F8F8F,
+  -1px -1px 0 #8F8F8F,
+  -1px 1px 0 #8F8F8F,
+  1px -1px 0 #8F8F8F;
+  color: #FEFEFE;
+  font-size: 2em;
+  font-family: Arial;
+  font-weight: bold;
+}

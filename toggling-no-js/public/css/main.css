@@ -1,0 +1,52 @@
+/**************************************************************************
+ * Toggline
+ **************************************************************************/
+
+#content-toggle[type=checkbox]:checked ~ #content-box {
+  display: block;
+}
+
+
+/**************************************************************************
+ * Styling
+ **************************************************************************/
+
+#content-toggle[type=checkbox] {
+  display: none;
+}
+
+#content-toggle {
+  background-color: #AEAEAE;
+}
+
+#content-toggle-label a {
+  color: #121212 !important;
+  text-decoration: none;
+}
+
+#content-toggle-label {
+  cursor: pointer;
+  background-color: #EFEFEF;
+  border-radius: 3px;
+  padding: 3px;
+  padding-left: 6px;
+  width: 100%;
+}
+
+#content-toggle-label:hover {
+  background-color: #F8F8F8;
+}
+
+#content-box {
+  display: none;
+/* transition: all 1s ease-in; */
+}
+
+
+/**************************************************************************
+ * Diverse
+ **************************************************************************/
+
+div {
+/* outline: 1px solid rgba(255, 0, 0, 0.3); */
+}

@@ -1,0 +1,14 @@
+.fadable {
+  -webkit-animation: yellow-fade 3s 1;
+  -moz-animation: yellow-fade 3s 1;
+}
+
+@-webkit-keyframes yellow-fade {
+  0% { background-color: rgba(255, 255, 0, 1.0); }
+  100% { background-color: rgba(255, 255, 0, 0.0); }
+}
+
+@-moz-keyframes yellow-fade {
+  0% { background-color: rgba(255, 255, 0, 1.0); }
+  100% { background-color: rgba(255, 255, 0, 0.0); }
+}

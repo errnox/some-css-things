@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# one:
+#   name: MyString
+#   description: MyString
+#   value: 1
+#   active: false
+
+# two:
+#   name: MyString
+#   description: MyString
+#   value: 1
+#   active: false
+
+<% 10.times do |i| %>
+No.<%= i %>:
+  name: Metric-<%= i %>
+  description: This is metrix no. <%= i %>.
+  value: <%= i * 2 %>
+  active: <%= i % 2 == 0 ? 0 : 1 %>
+<% end %>

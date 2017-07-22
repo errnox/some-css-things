@@ -1,0 +1,14 @@
+/* line 3, ../sass/partials/forms.scss */
+input[type="text"] {
+  background-color: #fefefe;
+  padding: 5px;
+  border: 1px solid #cfcfcf;
+}
+
+/* line 9, ../sass/partials/forms.scss */
+input[type="text"]:focus {
+  border: 1px solid #33a5f9;
+  -webkit-box-shadow: 0px 0px 5px #33a5f9;
+  -moz-box-shadow: 0px 0px 5px #33a5f9;
+  box-shadow: 0px 0px 5px #33a5f9;
+}

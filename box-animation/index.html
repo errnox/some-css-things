@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Box Animation</title>
+    <!-- <link rel="stylesheet" href="res/css/foundation.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="res/css/main.css" type="text/css" />
+  </head>
+
+  <body>
+    <div id="main-content">
+      <div class="row">
+        <h1>Box Animation</h1>
+        <div id="animatable-box" class="large-6 columns">
+          <div id="non-animatable-box">
+            <p>There should be an animated box when hovering the mouse over this box. This particular box (the one containing the text), however, should not be animated.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Known bugs</h2>
+      <p>When hovering the outer box (not the one containing the text) while the animation is running, the inner box (the one containing the text) will also move. This is a result of the inner box being a child element of the outer one.</p>
+
+    </div>
+
+    <script type="text/javascript" src=""></script>
+  </body>
+</html>

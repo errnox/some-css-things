@@ -1,0 +1,67 @@
+/*************************************************************************/
+/* Loading spinner*/
+/*************************************************************************/
+
+
+.loading-spinner {
+  display: table-row;
+  width: 400px;
+  margin: auto;
+}
+
+.loading-dot {
+  background-color: #343434;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  display: table-cell;
+}
+
+.loading-spinner .loading-dot {
+  -webkit-animation: loadingAnimation 1.5s infinite ease-in-out;
+  -moz-animation: loadingAnimation 1.5s infinite ease-in-out;
+  -o-animation: loadingAnimation 1.5s infinite ease-in-out;
+  animation: loadingAnimation 1.5s infinite ease-in-out;
+}
+
+@keyframes loadingAnimation {
+  0%, 80% { transform: scale(0.2) rotate(-90deg) translate(-100px, 0); }
+  40% { transform: scale(0.2) rotate(-90deg); }
+  20% { transform: scale(0.4); }
+}
+
+@-webkit-keyframes loadingAnimation {
+  0%, 80% { transform: scale(0.2) rotate(-90deg) translate(-100px, 0); }
+  40% { transform: scale(0.2) rotate(-90deg); }
+  20% { transform: scale(0.4); }
+}
+
+@-moz-keyframes loadingAnimation {
+  0%, 80% { transform: scale(0.2) rotate(-90deg) translate(-100px, 0); }
+  40% { transform: scale(0.2) rotate(-90deg); }
+  20% { transform: scale(0.4); }
+}
+
+@-o-keyframes loadingAnimation {
+  0%, 80% { transform: scale(0.2) rotate(-90deg) translate(-100px, 0); }
+  40% { transform: scale(0.2) rotate(-90deg); }
+  20% { transform: scale(0.4); }
+}
+
+@keyframes loadingAnimation {
+  0%, 80% { transform: scale(0.2) rotate(-90deg) translate(-100px, 0); }
+  40% { transform: scale(0.2) rotate(-90deg); }
+  20% { transform: scale(0.4); }
+}
+
+#loading-dot-1 {
+  animation-delay: -0.32s;
+}
+
+#loading-dot-2 {
+  animation-delay: -0.16s;
+}
+
+#loading-dot-3 {
+  animation-delay: -0.0s;
+}

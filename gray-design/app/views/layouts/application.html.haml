@@ -1,0 +1,48 @@
+!!! html
+%html{"ng-app" => "metricsApp"}
+  %head
+    %title
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+  %body
+    %div#header
+      %div#main-header-bar.container
+        %div#main-header.container
+
+          %div#logo.col-md-1
+            %a{:href => "/"} Logo
+
+          %div#main-menu.col-md-5
+
+          %input#menu-toggle{:type => "checkbox"}
+          %label#menu-label{:for => "menu-toggle", :onclick => ""}
+
+          %div#main-menu.col-md-6
+            %nav{:role => "navigation"}
+              %ul
+                %li
+                  %a{:href => "#"} About
+                %li
+                  %a{:href => "#"} Company
+                %li
+                  %a{:href => "#"} How it works
+                %li
+                  %a{:href => "#"} Contact
+    = yield
+
+    %div#footer.container
+      %div#footer-content.container
+        %div.col-md-12.text-center
+          %nav
+            %ul
+              %li
+                %a{:href => "/"} Home
+              %li
+                %a{:href => "/"} Diverse
+              %li
+                %a{:href => "/"} Other things
+              %li
+                %a{:href => "/"} Anything
+
+    = javascript_include_tag "application", "data-turbolinks-track" => true

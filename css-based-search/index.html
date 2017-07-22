@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS-based search</title>
+    <link rel="stylesheet" href="res/css/search.css" type="text/css" />
+    <link rel="stylesheet" href="res/css/foundation.min.css" type="text/css" />
+    <meta charset="utf-8" />
+
+  </head>
+
+  <body>
+
+    <div class="row">
+
+      <h1>CSS-Based Search</h1>
+
+      <div class="columns large-3">
+        <input type="text" name="" id="search-box" placeholder="five"/>
+        <style id="search-style" ></style>
+      </div>
+
+      <div class="columns large-6">
+        <ul class="numbers">
+          <li><p class="searchable" data-index="zero0cero">Zero</p></li>
+          <li><p class="searchable" data-index="one1uno">One</p></li>
+          <li><p class="searchable" data-index="two2dos">Two</p></li>
+          <li><p class="searchable" data-index="three3tres">Three</p></li>
+          <li><p class="searchable" data-index="four4cuatro">Four</p></li>
+          <li><p class="searchable" data-index="five5cinco">Five</p></li>
+          <li><p class="searchable" data-index="six6seis">Six</p></li>
+          <li><p class="searchable" data-index="seven7siete">Seven</p></li>
+          <li><p class="searchable" data-index="eight8ocho">Eight</p></li>
+          <li><p class="searchable" data-index="nine9nueve">Nine</p></li>
+          <li><p class="searchable" data-index="ten10diez">Ten</p></li>
+          <li><p class="searchable" data-index="eleven11once">Eleven</p></li>
+          <li><p class="searchable" data-index="twelve12doce">Twelve</p></li>
+        </ul>
+      </div>
+
+      <div class="columns large-3">
+        <ul class="numbers">
+          <p>Type a search query in this search box and see the list update while typing (English number phrase, number or Spanish number phrase).</p>
+          <p>Example queries:</p>
+          <ul>
+            <li><em>"one"</em></li>
+            <li><em>"uno"</em></li>
+            <li><em>"5"</em></li>
+            <li><em>"12"</em></li>
+          </ul>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <p>An explanation of this technique can be found on <a href="http://redotheweb.com/2013/05/15/client-side-full-text-search-in-css.html">François Zaninotto's blog</a>.</p>
+      <p>An application of this technique is a search for Jekyll described <a href="http://jzhang.io/add-search-to-jekyll">here</a></p>
+    </div>
+
+    <script type="text/javascript" src="res/js/search.js"></script>
+  </body>
+</html>

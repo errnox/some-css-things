@@ -1,0 +1,34 @@
+#header-line {
+  /* height: 100px; */
+  width: 100%;
+  display: inline;
+  background-color: #C9EEEE;
+  position: relative;
+}
+
+#header-line-image {
+  width: 100%;
+  height: auto;
+  float: right;
+}
+
+#image-line-text {
+  color: #FEFEFE;
+  font-size: 8em;
+  position: absolute;
+  left: 30px;
+  width: auto;
+}
+
+/*=========================================================================
+  Media Queries
+  =======================================================================*/
+
+/* Phone-ish */
+@media only screen and (max-width: 580px) {
+  #image-line-text {
+    font-size: 4em;
+    top: -10px;
+    width: auto;
+  }
+}

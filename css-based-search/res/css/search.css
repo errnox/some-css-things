@@ -1,0 +1,9 @@
+.numbers {
+  list-style: none;
+}
+
+.searchable {
+  border: 1px solid #121212;
+  margin: 5px;
+  padding: 2px;
+}

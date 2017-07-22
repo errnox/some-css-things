@@ -1,0 +1,99 @@
+/**************************************************************************
+ * Layout
+ *************************************************************************/
+
+body {
+  background-color: #EFEFEF;
+}
+
+.header {
+  background-color: #CFCFCF;
+  padding: 5px;
+  padding-left: 150px;
+  padding-right: 100px;
+  min-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header a {
+  color: #F1F1F1;
+  text-decoration: none;
+  text-shadow: 1px 1px #AFAFAF;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: #F8F8F8;
+  text-decoration: none;
+  text-shadow: 1px 1px #AFAFAF;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 10px;
+  }
+}
+
+.content {
+  padding: 15px;
+}
+
+@media (min-width: 992px) {
+  .content {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+/**************************************************************************
+ * Basics
+ *************************************************************************/
+
+.content-box {
+  padding: 5px;
+  margin: 5px;
+  background-color: #F8F8F8;
+}
+
+.content-box-raw {
+  background-color: #F8F8F8;
+}
+
+
+.content-box-raw-content {
+  padding: 5px;
+  margin: 5px;
+}
+
+.content-info-box {
+  background-color: #DFDFDF;
+  color: #1A1A1A;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding: 5px;
+}
+
+hr {
+  border-top: 1px solid #DFDFDF;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+form button[type=submit] {
+  margin-top: 10px;
+}
+
+.pure-button {
+  font-weight: bold;
+  background-color: #4FA4FF;
+}
+
+p {
+  color: #121212;
+  font-size: 0.9em;
+}
